@@ -1,7 +1,8 @@
 
-import './App.css';
 import React from "react";
-import { BrowserRouter as Router, Routes, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes } from "react-router-dom";
+import Navbar from './components/Navbar';
+import "../src/assets/css/common.scss";
 // import Home from "./pages/Home";
 // import About from "./pages/About";
 // import Projects from "./pages/Projects";
@@ -9,15 +10,7 @@ import { BrowserRouter as Router, Routes, Link } from "react-router-dom";
 function App() {
   return (
     <Router>
-      <nav>
-        <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/about">About</Link></li>
-          <li><Link to="/projects">Tech Skills</Link></li>
-          <li><Link to="/contact">Contact</Link></li>
-        </ul>
-      </nav>
-
+    <Navbar />
       {/* Define routes */}
       <Routes>
         {/* <Route path="/" element={<Home />} />

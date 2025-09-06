@@ -1,0 +1,27 @@
+@import 'variables', 'fonts', 'header', 'footer', "buttons";
+
+html{
+  @media only screen and (min-width: 1200px) {
+      font-size: 11px;
+    }
+    @media only screen and (min-width: 1400px) {
+      font-size: 13px;
+    }
+    
+    @media (max-width: $md) {
+      font-size: 12px;
+    }
+    @media (max-width: $sm) {
+      font-size: 12px;
+    }
+    @media (max-width: 320px) {
+      font-size: 11px;
+    }
+}
+body {
+  font-family: $font-family-onest;
+  background-color: #333;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
